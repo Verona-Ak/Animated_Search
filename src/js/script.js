@@ -57,13 +57,14 @@ window.addEventListener('DOMContentLoaded', () => {
                     appear.elem.classList.add(appear.class);
                     appear.elem.textContent = appear.value;
                     setTimeout(() => {
-                        dir[i].classList.add(dir[i].class);
+                        dir[i].elem.classList.add(dir[i].class);
                     }, 500);
                 } else {
                     back[i].elem.classList.add(back[i].class);
+                    dir[i].elem.classList.remove(dir[i].class);
                 }
                 
-                dir[i].elem.classList.remove(dir[i].class);
+                // dir[i].elem.classList.remove(dir[i].class);
             }
             disappear.elem.classList.remove(disappear.class);
         }
