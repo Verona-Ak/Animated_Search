@@ -1,0 +1,10 @@
+@mixin anim-long {
+    animation-duration: 1s; /* Время анимации*/
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@mixin anim-short {
+    animation-duration: 1s; /* Время анимации*/
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

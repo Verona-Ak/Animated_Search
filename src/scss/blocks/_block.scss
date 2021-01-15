@@ -1,0 +1,117 @@
+.block {
+    position: relative;
+    width: 215px;
+    height: 57px;
+    background: #E5E5E5;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__animated {
+        animation-name: increase;
+        @include anim-long;
+    }
+    &__animated-back {
+        animation-name: decrease;
+        @include anim-long;
+    }
+    &__search {
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 57px;
+        height: 57px;
+        cursor: pointer;
+        outline: none;
+        background-color: transparent;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        &-img {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            background: url('../img/seacrh-icon.svg') center center/cover no-repeat;
+            &__animated {
+                animation-name: changeBg;
+                @include anim-long;
+            }
+            &__animated-back {
+                animation-name: changeBgBack;
+                @include anim-long;
+            }
+        }
+    }
+    &__line{
+        position: absolute;
+        width: 1px;
+        height: 44px;   
+        background: #C4C4C4;
+        &-left {
+            top: 7px;
+            left: 58px;
+        }
+        &-right {
+            top: 7px;
+            right: 155px;
+            &__animated {
+                animation-name: appearenceLine;
+                @include anim-long;
+            }
+            &__animated-back {
+                animation-name: disappearanceLine;
+                @include anim-long;
+            }
+        }
+    }
+    &__name {
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 157px;
+        height: 57px;
+        background-color: transparent;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 1;
+        color: #000000;
+        outline: none;
+        cursor: pointer;
+        &__animated {
+            animation-name: makeless;
+            @include anim-short;
+        }
+        &__animated-back {
+            animation-name: makemore;
+            @include anim-short;
+        }
+        &__animated-2 {
+            animation-name: changeWord;
+            @include anim-short;
+        }
+        &__animated-2-back {
+            animation-name: changeWordBack;
+            @include anim-short;
+        }
+    }
+    &__field {
+        padding: 0;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        &__animated {
+            animation-name: appearenceBlock;
+            @include anim-long;
+        }
+        &__animated-back {
+            animation-name: disappearanceBlock;
+            @include anim-long;
+        }
+    }
+}
+

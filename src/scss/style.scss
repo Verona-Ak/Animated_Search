@@ -1,0 +1,8 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+@import 'base/_mixins.scss';
+@import 'blocks/_outside.scss';
+@import 'blocks/_block.scss';
+@import 'animations/_dir_animate.scss';
+@import 'animations/_back_animate.scss';

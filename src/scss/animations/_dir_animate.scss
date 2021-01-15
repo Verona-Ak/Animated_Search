@@ -1,0 +1,63 @@
+@keyframes increase {
+    from {
+        width: 215px;
+        background: #E5E5E5;
+    }
+    to {
+        width: 765px;
+        background: #fff;
+    }
+}
+@keyframes appearenceBlock {
+    from {
+        width: 0px;
+        height: 0px;
+        padding-left: 0px;
+        background: #E5E5E5;
+    }
+    to {
+        width: 626px;
+        height: 100%;
+        padding-left: 10px;
+        background: #fff;
+    }
+}
+@keyframes appearenceLine {
+    from {
+        right: 154px;
+    }
+    to {
+        right: 80px;
+    }
+}
+
+@keyframes makeless {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .0;
+    }
+}
+@keyframes changeWord {
+    from {
+        width: 157px;
+        opacity: .0;
+    }
+    to {
+        width: 80px;
+        opacity: 1;
+    }
+}
+@keyframes changeBg {
+    from {
+        background: url('../img/seacrh-icon.svg') center center/cover no-repeat;
+        width: 32px; 
+        height: 32px;
+    }
+    to {
+        background: url('../img/close.svg') center center/cover no-repeat;
+        width: 22px; 
+        height: 22px;
+    }
+}
